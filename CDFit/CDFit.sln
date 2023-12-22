@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDFit.BL", "CDFit.BL\CDFit.BL.csproj", "{3226E043-4B3D-432E-9A8D-A5CA3ED4FEAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDFit.CMD", "CDFit.CMD\CDFit.CMD.csproj", "{5C8D84BD-5AD0-4856-A672-54B57229050B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3226E043-4B3D-432E-9A8D-A5CA3ED4FEAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3226E043-4B3D-432E-9A8D-A5CA3ED4FEAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3226E043-4B3D-432E-9A8D-A5CA3ED4FEAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C8D84BD-5AD0-4856-A672-54B57229050B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8D84BD-5AD0-4856-A672-54B57229050B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8D84BD-5AD0-4856-A672-54B57229050B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8D84BD-5AD0-4856-A672-54B57229050B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
