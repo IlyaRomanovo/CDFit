@@ -5,6 +5,7 @@ namespace CDFit.BL.Model
     /// <summary>
     /// Пол.
     /// </summary>
+    [Serializable]
     public class Gender
     {
         /// <summary>
@@ -19,7 +20,7 @@ namespace CDFit.BL.Model
         /// <exception cref="ArgumentNullException"></exception>
         public Gender (string name)
         {
-            if (string.IsNullOrWhiteSpace(name))
+            if (string.IsNullOrEmpty(name))
             {
                 throw new ArgumentNullException("Имя пользователя не может быть пустым или null", nameof(name));
             }    

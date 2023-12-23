@@ -5,6 +5,7 @@ namespace CDFit.BL.Model
     /// <summary>
     /// Пользователь.
     /// </summary>
+    [Serializable]
     public class User
     {
         #region Свойства
@@ -51,7 +52,7 @@ namespace CDFit.BL.Model
                     double height)
         {
         #region Проверка условий
-            if (string.IsNullOrWhiteSpace(name))
+            if (string.IsNullOrEmpty(name))
             {
                 throw new ArgumentNullException("Имя пользователя не может быть пустым или null.", nameof(name));
             }
