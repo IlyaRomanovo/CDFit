@@ -10,56 +10,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //string s = "qwERty";
-            //s = s.ToLower();
-            //char r = ';';
-            //int g = s.Length;
-            //Console.WriteLine(s);
-            //Console.WriteLine(Char.IsLetter(s[2]));
+            string s = "()[]{}";
+            string round = "()", square = "[]", figure = "{}";
 
-            string s = "PAnamamanaPwersd";
-            s = s.ToLower();
-            string s1 = "";
-            for (int i = 0; i < s.Length; i++)
-            {
-                if (Char.IsLetter(s[i]))
-                {
-                    s1 += s[i];
-                }
-            }
+            s = s.Replace(round, "A");
+            s = s.Replace(square, "B");
+            s = s.Replace(figure, "C");
 
-            bool q = true;
-
-            if (s1.Length % 2 == 0)
-            {
-                for (int i = 0; i < s1.Length / 2; i++)
-                {
-                    if (s1[i] != s1[s1.Length - 1 - i])
-                    {
-                        q = false;
-                        break;
-                    }
-                }
-
-                Console.WriteLine(q);
-            }
-
-
-            if (s1.Length % 2 != 0)
-            {
-                for (int i = 0; i < s1.Length / 2; i++)
-                {
-                    if (s1[i] != s1[s1.Length - 1 - i])
-                    {
-                        q = false;
-                        break;
-                    }
-                }
-
-                Console.WriteLine(q);
-            }
-
-            Console.WriteLine(s1);
+            Console.WriteLine(s);
         }
     }
 }
